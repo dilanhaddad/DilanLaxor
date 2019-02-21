@@ -4,7 +4,7 @@ public class gissaTal
 {
   public static void main(String args[])
   {
-   Scanner keyboard = new Scanner(System.in);
+   Scanner input = new Scanner(System.in);
    
    int min = 0;
    int max = 100;
@@ -12,17 +12,17 @@ public class gissaTal
        guess, 
        count = 0;
 
-   System.out.println("Gissa en siffra mellan 0 till 100 ?");
+   System.out.println("Gissa en siffra mellan 0 till 100?, du har 7 försök");
 
-   while((guess = keyboard.nextInt()) != a){
+   while((guess = input.nextInt()) != a){
 	   
      if (guess > max)
      {
-       System.out.println("Ditt tal måste vara under 100");
+       System.out.println("Talet är under 100");
      }
      else if (guess < min)
      {
-       System.out.println("Ditt tal måste vara högre än 0");
+       System.out.println("Talet är högre än 0");
      }
      else if (guess > a){
     	 System.out.println("lägre!");
@@ -32,9 +32,16 @@ public class gissaTal
        System.out.println("högre!");
      }
      count++;
+     if (count >= 7) 
+     {
+    	 System.out.println("Bra försökt men du gissade tyvärr inte rätt, talet var " + a);
+    	 break;
+     }
    }
 
-   System.out.println("Rätt, bra jobbat!. Du gissade med "+ count +" försök!");
+   if(guess==a) {
+	   System.out.println("Rätt, bra jobbat!. Du gissade med "+ count +" försök!");
+   }
   }
 
 }
