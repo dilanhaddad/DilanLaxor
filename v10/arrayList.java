@@ -4,7 +4,7 @@ public class arrayList {
 
 	public static void main(String[] args) {
 		
-	int [] arr1 = {1,2,3,4,5};
+	int [] arr1 = {1, 2, 3, 4, 5};
 	String[] str1 = {"dilan","haddad"};
 	
 	for (int i = 0; i < str1.length; i++) {

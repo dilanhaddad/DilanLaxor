@@ -56,6 +56,7 @@ public class gissaTal
 			} else {
 				System.out.println("högre!");
 			}
+			// detta är för att säga om talet är för högt eller lågt
 			count++;
 			if (count >= countMax) {
 				System.out.println("Bra försökt men du gissade tyvärr inte rätt, talet var " + a);
@@ -65,6 +66,7 @@ public class gissaTal
 
 		if (guess == a) {
 			System.out.println("Rätt, bra jobbat!. Du gissade med " + count + " försök!");
+			// detta säget om du har rätt och hur många gånger du gissade
 		}
 	}
 
