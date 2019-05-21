@@ -152,13 +152,11 @@ while (Gissning < RättOrd.length()) {
     			System.out.println("   |          / \\ ");
     			System.out.println("   |         /   \\");
     			System.out.println("___|___   ");
-    			System.out.println("\n");   
+    			System.out.println("\n");  
+    			 System.out.println("\nDu misslyckades med att gissa hela ordet");
+    	            System.out.println("Ordet var " + "'" + RättOrd + "'  \n");
     			
     		}
-    		
-    	
-            System.out.println("\nDu misslyckades med att gissa hela ordet");
-            System.out.println("Ordet var " + "'" + RättOrd + "'  \n");
             
             if (RättOrd.contains(bokstav + "")) {
                 for (int y = 0; y < RättOrd.length(); y++) { //en loop som tittar om svaret innehåller det gissade talet och ersätter * med bokstaven
